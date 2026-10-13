@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>URL Shortener</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- SECTION 1 : CREATE SHORT URL -->
+        <section class="create-section">
+
+            <h1>Create Short URL</h1>
+
+            <p>Enter your original URL</p>
+
+            <input
+                type="text"
+                id="originalUrl"
+                placeholder="Enter original URL"
+            >
+
+            <button id="shortenBtn">
+                Shorten URL
+            </button>
+
+            <div id="shortResult">
+                <!-- Short URL will appear here -->
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="right-section">
+
+            <!-- SECTION 2 : REDIRECT -->
+            <section class="redirect-section">
+
+                <h2>Enter Short URL to Redirect</h2>
+
+                <input
+                    type="text"
+                    id="shortUrl"
+                    placeholder="Enter short URL"
+                >
+
+                <button id="redirectBtn">
+                    Redirect
+                </button>
+
+            </section>
+
+
+            <!-- SECTION 3 : STATS -->
+            <section class="stats-section">
+
+    <h2>Stats</h2>
+
+    <p>Enter Short URL</p>
+
+    <input
+        type="text"
+        id="statsUrl"
+        placeholder="Enter short code"
+    >
+
+    <button id="statsBtn">
+        Get Stats
+    </button>
+
+    <div id="statsResult">
+        <!-- Stats will appear here -->
+    </div>
+
+</section>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
